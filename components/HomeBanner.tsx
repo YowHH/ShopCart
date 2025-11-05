@@ -1,6 +1,8 @@
 import React from 'react'
 import Title from './ui/text'
 import Link from 'next/link'
+import Image from 'next/image'
+import { banner_1 } from '@/images'
 
 const HomeBanner = () => {
   return (
@@ -17,7 +19,11 @@ const HomeBanner = () => {
             </Link>
         </div>
         <div>
-
+          <Image
+          src={banner_1}
+          alt="banner_1"
+          className="hidden md:inline-flex w-96"
+        />
         </div>
     </div>
   )

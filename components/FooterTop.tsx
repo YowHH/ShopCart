@@ -42,11 +42,11 @@ const FooterTop = () => {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 border-b">
         {data?.map((item, index) => (
-            <div key={index} className="flex items-center gap-3 group hover:bg-gray-100 p-4 transition-colors">
+            <div key={index} className="flex items-center gap-3 group hover:bg-gray-100 p-4 transition-colors hoverEffect">
                 {item?.icon}
                 <div className="">
-                    <h3 className="font-semibold text-gray-900 group-hover:text-black ">{item?.title}</h3>
-                    <p>{item?.subtitle}</p>
+                    <h3 className="font-semibold text-gray-900 group-hover:text-black hoverEffect">{item?.title}</h3>
+                    <p className="text-gray-600 text-sm mt-1 group-hover:text-gray-900 hoverEffect">{item?.subtitle}</p>
                 </div>
             </div>
         ))}
